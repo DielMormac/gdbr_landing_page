@@ -1,17 +1,21 @@
+html {
+    background-color: rgb(80, 80, 80);
+}
+
 body {
     margin: 0;
-    color: white;
     background-color: rgb(100, 100, 100);
+}
+
+#body {
+    padding-bottom: 25px;
+    color: red;
     font-size: 20px;
 }
 
 #header {
     margin: 0;
     background-color: rgb(80, 80, 80);
-}
-
-.fa {
-    color: white;
 }
 
 #banner {
@@ -25,7 +29,17 @@ body {
 }
 
 #footer {
-    margin: 0px;
-    padding: 10px 0px 0px 25px;
+    margin: 0;
+    color: white;
+    padding: 20px 0px 0px 0px;
     background-color: rgb(80, 80, 80);
+}
+
+#footer .fa {
+    font-size: 48px;
+    color: white;
+}
+
+#author a:hover {
+    color: white;
 }
