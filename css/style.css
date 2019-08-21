@@ -50,14 +50,8 @@ body {
     border-bottom-color: var(--main-border-color);
 }
 
-#banner {
-    margin: 50px 0px 50px 0px;
-    color: var(--main-font-color);
-    background-image: url("../images/gdbr-cover.png");
-    background-size: cover;
-    padding: 15px 0px 250px 0px;
-    border-radius: 5px;
-    box-shadow: 2px 2px var(--main-border-color);
+#carousel {
+    margin-top: 2px;
 }
 
 #footer {
