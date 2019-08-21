@@ -73,6 +73,7 @@ body {
 /* classes */
 .card {
     color: var(--main-font-color);
+    padding: 0 15px;
     background-color: var(--main-header-color);
     border-color: var(--main-header-color);
     box-shadow: 2px 2px var(--main-border-color);
@@ -80,7 +81,13 @@ body {
     margin: 50px 0px 50px 0px;
 }
 
-
 .whiteTxt {
     color: var(--main-font-color);
+}
+
+.profilePicture {
+    align-self: center;
+    margin: 10px 0px 10px 0px;
+    border: 1px solid var(--main-bg-color);
+    box-shadow: 1px 1px var(--main-bg-color);
 }
