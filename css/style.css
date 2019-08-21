@@ -1,45 +1,87 @@
+/* color variables */
+:root {
+    --main-font-color: white;
+    --main-bg-color: rgb(100, 100, 100);
+    --main-header-color: rgb(80, 80, 80);
+    --main-border-color: rgb(90, 90, 90);
+}
+
+/* html tags */
 html {
-    background-color: rgb(80, 80, 80);
+    background-color: var(--main-bag-color);
 }
 
 body {
     margin: 0;
-    background-color: rgb(100, 100, 100);
+    background-color: var(--main-bg-color);
 }
 
+/* ids */
 #body {
     padding-bottom: 25px;
-    color: red;
-    font-size: 20px;
 }
 
 #header {
     margin: 0;
-    background-color: rgb(80, 80, 80);
+    background-color: var(--main-header-color);
+    color: var(--main-font-color);
+    vertical-align: center;
+    text-transform: uppercase;    
+}
+
+#header .fa{
+    color: var(--main-font-color);
+    font-size: 24px;
+}
+
+#header .v-middle{
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+#header .navbar-text {
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: var(--main-border-color);
+}
+
+#header .navbar-text:hover {
+    background-color: var(--main-bg-color);
+    border-bottom-color: var(--main-border-color);
 }
 
 #banner {
-    margin: 50px;
-    color: white;
+    margin: 50px 0px 50px 0px;
+    color: var(--main-font-color);
     background-image: url("../images/gdbr-cover.png");
     background-size: cover;
     padding: 15px 0px 250px 0px;
     border-radius: 5px;
-    box-shadow: 2px 2px rgb(90, 90, 90)
+    box-shadow: 2px 2px var(--main-border-color);
 }
 
 #footer {
     margin: 0;
-    color: white;
+    color: var(--main-font-color);
     padding: 20px 0px 0px 0px;
-    background-color: rgb(80, 80, 80);
+    background-color: var(--main-header-color);
 }
 
 #footer .fa {
     font-size: 48px;
-    color: white;
+    color: var(--main-font-color);
 }
 
 #author a:hover {
-    color: white;
+    color: var(--main-font-color);
+}
+
+/* classes */
+.card {
+    color: var(--main-font-color);
+    background-color: var(--main-header-color);
+    border-color: var(--main-header-color);
+    box-shadow: 2px 2px var(--main-border-color);
+    font-size: 20px;
+    margin: 50px 0px 50px 0px;
 }
