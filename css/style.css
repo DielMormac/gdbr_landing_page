@@ -47,11 +47,11 @@ body {
 
 #header .navbar-text:hover {
     background-color: var(--main-bg-color);
-    border-bottom-color: var(--main-border-color);
+    border-bottom-color: var(--main-bg-color);
 }
 
 #carousel {
-    margin-top: 2px;
+    margin-top: 1px;
 }
 
 #footer {
@@ -78,4 +78,9 @@ body {
     box-shadow: 2px 2px var(--main-border-color);
     font-size: 20px;
     margin: 50px 0px 50px 0px;
+}
+
+
+.whiteTxt {
+    color: var(--main-font-color);
 }
