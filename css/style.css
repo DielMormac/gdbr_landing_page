@@ -1,9 +1,12 @@
 /* color variables */
 :root {
     --main-font-color: white;
-    --main-bg-color: rgb(100, 100, 100);
-    --main-header-color: rgb(80, 80, 80);
-    --main-border-color: rgb(90, 90, 90);
+    --main-bg-color: rgb(51, 47, 36);
+    --main-navbar-color: rgba(35, 35, 26, 0.8);
+    --main-navbar-color-hover: rgb(51, 47, 36, 0.8);
+    --main-footer-color: rgb(35, 35, 26);
+    --main-border-color: rgb(84, 152, 11);
+    --main-card-color: rgba(84, 152, 11, 0.3);
 }
 
 /* html tags */
@@ -23,7 +26,7 @@ body {
 
 #header {
     margin: 0;
-    background-color: var(--main-header-color);
+    background-color: var(--main-card-color);
     color: var(--main-font-color);
     vertical-align: center;
     text-transform: uppercase;    
@@ -39,31 +42,24 @@ body {
     font-weight: bold;
 }
 
-#header .navbar-text {
-    border-width: 0px 1px 1px 1px;
-    border-style: solid;
-    border-color: var(--main-border-color);
-}
-
 #header .navbar-text:hover {
-    background-color: var(--main-bg-color);
-    border-bottom-color: var(--main-bg-color);
-}
-
-#carousel {
-    margin-top: 1px;
+    background-color: var(--main-navbar-color-hover);
 }
 
 #footer {
     margin: 0;
     color: var(--main-font-color);
     padding: 20px 0px 0px 0px;
-    background-color: var(--main-header-color);
+    background-color: var(--main-footer-color);
 }
 
 #footer .fa {
     font-size: 48px;
     color: var(--main-font-color);
+}
+
+#author a {
+    color: var(--main-border-color);
 }
 
 #author a:hover {
@@ -74,9 +70,9 @@ body {
 .card {
     color: var(--main-font-color);
     padding: 0 15px;
-    background-color: var(--main-header-color);
-    border-color: var(--main-header-color);
-    box-shadow: 2px 2px var(--main-border-color);
+    background-color: var(--main-card-color);
+    border-color: var(--main-footer-color);
+    box-shadow: 1px 1px var(--main-footer-color);
     font-size: 20px;
     margin: 50px 0px 50px 0px;
 }
@@ -88,11 +84,15 @@ body {
 .profilePicture {
     align-self: center;
     margin: 10px 0px 10px 0px;
-    border: 1px solid var(--main-bg-color);
-    box-shadow: 1px 1px var(--main-bg-color);
+    border: 10px solid var(--main-border-color);
 }
 
 .divisory {
     color: var(--main-font-color);
     margin-top: 25px;
+}
+
+.btn-primary {
+    background-color: var(--main-border-color);
+    border-color: var(--main-border-color);
 }
