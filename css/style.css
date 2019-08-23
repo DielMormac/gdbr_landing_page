@@ -66,18 +66,18 @@ body {
     color: var(--main-font-color);
 }
 
-#metrics .fa {
+#howWeDo .fa, #metrics .fa {
     font-size: 48px;
     margin-right: 5px;
     padding-top: 10px;
 }
 
-#metrics .fa span{
+#howWeDo .fa span, #metrics .fa span{
     font-size: 36px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
- #metrics p {
+#howWeDo h6, #metrics h6 {
     margin-top: 5px;
 }
 
@@ -85,12 +85,10 @@ body {
 .card {
     color: var(--main-font-color);
     padding: 0 15px;
-    background-color: var(--main-card-color);
-    border-color: var(--main-footer-color);
-    box-shadow: 1px 1px var(--main-footer-color);
+    background-color: var(--main-bg-color);
+    border: 0;
     font-size: 20px;
     margin: 50px 0px 50px 0px;
-    border-radius: 0;
 }
 
 .whiteTxt {
@@ -100,7 +98,7 @@ body {
 .profilePicture {
     align-self: center;
     margin: 10px 0px 10px 0px;
-    border: 10px solid var(--main-border-color);
+    border: 10px solid var(--main-card-color);
 }
 
 .divisory {
