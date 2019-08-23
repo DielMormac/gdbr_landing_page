@@ -66,6 +66,21 @@ body {
     color: var(--main-font-color);
 }
 
+#metrics .fa {
+    font-size: 48px;
+    margin-right: 5px;
+    padding-top: 10px;
+}
+
+#metrics .fa span{
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+ #metrics p {
+    margin-top: 5px;
+}
+
 /* classes */
 .card {
     color: var(--main-font-color);
@@ -75,6 +90,7 @@ body {
     box-shadow: 1px 1px var(--main-footer-color);
     font-size: 20px;
     margin: 50px 0px 50px 0px;
+    border-radius: 0;
 }
 
 .whiteTxt {
