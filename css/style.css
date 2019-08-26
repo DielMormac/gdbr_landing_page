@@ -28,22 +28,35 @@ body {
     margin: 0;
     background-color: var(--main-card-color);
     color: var(--main-font-color);
-    vertical-align: center;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 
-#header .fa{
-    color: var(--main-font-color);
-    font-size: 24px;
-}
-
-#header .v-middle{
-    padding-top: 14px;
+#header a {
+    color: var(--main--color);
+    font-size: 12px;
     font-weight: bold;
 }
 
-#header .navbar-text:hover {
-    background-color: var(--main-navbar-color-hover);
+#header a:hover, #header .fa:hover, #footer .fa:hover {
+    color: var(--main-bg-color);
+}
+
+#header-icons {
+    margin-top: 8px;
+    height: 24px;
+    width: 108px;
+}
+
+#header .fa {
+    font-size: 20px;
+}
+
+#header .navbar {
+    background-color: var(--main-border-color);
+}
+
+#slider {
+    margin-top: 50px;
 }
 
 #footer {
@@ -68,13 +81,12 @@ body {
 
 #howWeDo .fa, #metrics .fa {
     font-size: 48px;
-    margin-right: 5px;
     padding-top: 10px;
 }
 
 #howWeDo .fa span, #metrics .fa span{
     font-size: 36px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 #howWeDo h6, #metrics h6 {
@@ -98,7 +110,7 @@ body {
 .profilePicture {
     align-self: center;
     margin: 10px 0px 10px 0px;
-    border: 10px solid var(--main-card-color);
+    border: 10px solid var(--main-border-color);
 }
 
 .divisory {

@@ -13,41 +13,85 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link href="./css/fontawesome.min.css" rel="stylesheet">
             <link href="./css/style.css" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
             <!-- Scripts -->
             <script src="https://use.fontawesome.com/543d598ce5.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
             <!-- Header -->
             <header id="header" class="header">
-                <!-- <nav class="navbar navbar-default navbar-fixed-top"> -->
-                    <div class="container">
-                        <div class="row text-center">
-                            <div class="col-xs-1 col-sm-1 col-md-1 navbar-text">
-                                <div class="v-middle"><img src="./images/gdbr-logo-4096.png" alt="Logo Small" width="60" height="35"></div>
-                            </div>
-                            <div class="col-xs-3 col-sm-3 col-md-3 navbar-text">
-                                    <ul class="list-inline v-middle">
-                                        <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCUNWXB86RgmLDGdFfVCnx_Q/videos" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                                        <li class="list-inline-item"><a href="https://www.facebook.com/gamedevelopersbrazil/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                        <li class="list-inline-item"><a href="https://www.meetup.com/pt-BR/Game-Developers-Brazil/" target="_blank"><i class="fa fa-meetup"></i></a></li>
-                                        <li class="list-inline-item"><a href="https://github.com/DielMormac/gdbr_landing_page" target="_blank"><i class="fa fa-github"></i></a></li>
-                                    </ul>
-                                </div>
-                            <div class="col-xs-2 col-sm-2 col-md-2 navbar-text">
-                                <div class="v-middle">SOBRE</div>
-                            </div>
-                            <div class="col-xs-2 col-sm-2 col-md-2 navbar-text">
-                                <div class="v-middle">QUEM SOMOS</div>
-                            </div>
-                            <div class="col-xs-2 col-sm-2 col-md-2 navbar-text">
-                                <div class="v-middle">COMUNIDADE</div>
-                            </div>
-                            <div class="col-xs-2 col-sm-2 col-md-2 navbar-text">
-                                <div class="v-middle">CONTATO</div>
-                            </div>
+                <nav class="navbar navbar-light navbar-expand-md fixed-top bg-faded justify-content-center">
+                    <div class="d-flex w-30 mr-auto">
+                        <a href="#" class="navbar-brand">
+                            <img src="./images/gdbr-icon.png" width="30" height="30" alt="">
+                        </a>
+                        <div id="header-icons">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCUNWXB86RgmLDGdFfVCnx_Q/videos" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.facebook.com/gamedevelopersbrazil/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.meetup.com/pt-BR/Game-Developers-Brazil/" target="_blank"><i class="fa fa-meetup"></i></a></li>
+                                <li class="list-inline-item"><a href="https://github.com/DielMormac/gdbr_landing_page" target="_blank"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse w-70" id="collapsingNavbar3">
+                        <ul class="nav navbar-nav ml-auto w-70 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Como Fazemos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">História</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Quem</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Parceiros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contatos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- <nav class="navbar navbar-expand-lg whiteTxt fixed-top">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/gdbr-icon.png" width="30" height="30" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav navbar-right">
+                            <a class="nav-item nav-link" href="https://www.youtube.com/channel/UCUNWXB86RgmLDGdFfVCnx_Q/videos" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <a class="nav-item nav-link" href="https://www.facebook.com/gamedevelopersbrazil/" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a class="nav-item nav-link" href="https://www.meetup.com/pt-BR/Game-Developers-Brazil/" target="_blank"><i class="fa fa-meetup"></i></a>
+                            <a class="nav-item nav-link" href="https://github.com/DielMormac/gdbr_landing_page" target="_blank"><i class="fa fa-github"></i></a>
+                            <a class="nav-item nav-link active" href="#">Home</a>
+                            <a class="nav-item nav-link" href="#">Sobre</a>
+                            <a class="nav-item nav-link" href="#">Como Fazemos</a>
+                            <a class="nav-item nav-link" href="#">Dados</a>
+                            <a class="nav-item nav-link" href="#">História</a>
+                            <a class="nav-item nav-link" href="#">Quem</a>
+                            <a class="nav-item nav-link" href="#">Parceiros</a>
+                            <a class="nav-item nav-link" href="#">Contatos</a>
                         </div>
                     </div>
-                <!-- </nav> -->
+                </nav> -->
             </header>
         </head>
     <body>
